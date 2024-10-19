@@ -12,8 +12,8 @@ import java.awt.event.ActionEvent;
 
 public class EventDriven extends JFrame {
 
-	private static final long serialVersionUID = 1L;
-	private JPanel contentPane;
+    private static final long serialVersionUID = 1L;
+    private JPanel contentPane;
     private JTextField tfFirstName;
     private JTextField tfLastName;
     private JTextField tfMiddleName;
@@ -153,16 +153,16 @@ class Output extends JFrame {
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
 	private JPanel panel;
-    private JLabel lblFirstName;
-    private JLabel lblLastName;
-    private JLabel lblMiddleName;
-    private JLabel lblMobileNumber;
-    private JLabel lblEmailAddress;
-    private JLabel lblFirstNameOutput;
-    private JLabel lblLastNameOutput;
-    private JLabel lblMiddleNameOutput;
-    private JLabel lblMobileNumberOutput;
-    private JLabel lblEmailAddressOutput;
+        private JLabel lblFirstName;
+        private JLabel lblLastName;
+        private JLabel lblMiddleName;
+        private JLabel lblMobileNumber;
+        private JLabel lblEmailAddress;
+        private JLabel lblFirstNameOutput;
+        private JLabel lblLastNameOutput;
+        private JLabel lblMiddleNameOutput;
+        private JLabel lblMobileNumberOutput;
+        private JLabel lblEmailAddressOutput;
 
 	public Output(String firstName, String lastName, String middleName, String mobileNumber, String emailAddress) {
         setTitle("OUTPUT");
