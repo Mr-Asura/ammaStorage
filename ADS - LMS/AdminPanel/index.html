@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/cmu-logo-colored-square.png" type="image/x-icon">
+    <link rel="stylesheet" href="/AdminPanel/style.css">
+    <link rel="stylesheet" href="/styles/essentials.css">
+    <link rel="stylesheet" href="/styles/font.css">
+    <title>Dashboard</title>
+</head>
+<body class="background">
+    <nav class="navbar">
+        <div class="logo">
+            <img src="/img/cmu-logo-colored.png" alt="logo">
+            <img src="/img/cmu-logo-text-colored.png" alt="logo-text">
+        </div>
+        <div class="profile-container"  title="Profile" onclick="redirect('../profile')">
+            <img src="/img/profile-amma.jpg" alt="pf" class="user-img">
+            <div class="user-info">
+                <p class="display-name">Ammaron Oliveros</p>
+                <p class="student-id">Admin</p>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <nav class="navmenu">
+            <button class="menuBtn font-poppins">
+                <img src="/img/icon-back.png" class="icon-back">
+                <p>Collapse Menu</p>
+            </button>
+            <ul type="none" class="navigation">
+                <li id="dashboard" class="active"><a href="/AdminPanel/"><img src="/img/icon-dash.png" width="20px">Dashboard</a></li>
+                <li id="userManage"><a href="/AdminPanel/userManage/"><img src="/img/icon-user.png" width="20px">User Management</a></li>
+                <li id="classManage"><a href="/AdminPanel/classManage/"><img src="/img/icon-grade.png" width="20px">Class Management</a></li>
+                <li id="courseManage"><a href="/AdminPanel/courseManage/"><img src="/img/icon-archive.png" width="20px">Course Management</a></li>
+            </ul>
+            <button class="logoutBtn font-poppins" onclick="redirect('../')">
+                <img src="/img/icon-logout.png" class="icon-logout">
+                <p>Logout Account</p>
+            </button>
+        </nav>
+        <div class="container">
+            <div class="content">
+                <div class="pinned-courses">
+                    <div class="pc-heading">
+                        <p>Overview</p>
+                        <a href="#"></a>
+                    </div>
+                    <div class="pc-container">
+                        <div class="course-card" id="c1">
+                            <div class="card-item">
+                                <p id="item-title">Users</p>
+                                <p id="item-count">200</p>
+                            </div>
+                            <p id="item-unit">view</p>
+                        </div>
+                        <div class="course-card" id="c4">
+                            <div class="card-item">
+                                <p id="item-title">Student</p>
+                                <p id="item-count">180</p>
+                            </div>
+                            <p id="item-unit">view</p>
+                        </div>
+                        <div class="course-card" id="c2">
+                            <div class="card-item">
+                                <p id="item-title">Professor</p>
+                                <p id="item-count">5</p>
+                            </div>
+                            <p id="item-unit">view</p>
+                        </div>
+                        <div class="course-card" id="c3">
+                            <div class="card-item">
+                                <p id="item-title">Enrolled</p>
+                                <p id="item-count">175</p>
+                            </div>
+                            <p id="item-unit">view</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="quickAction">
+                    <div class="qa-heading">
+                        <p>Quick Actions</p>
+                    </div>
+                    <div class="qa-container">
+                        <div class="qa-btn-holder">
+                            <div class="qa-btn">
+                                <img src="/img/icon-user.png" class="colorized-icon">
+                                <p>Create User</p>
+                            </div>
+                            <div class="qa-btn">
+                                <img src="/img/icon-grade.png" class="colorized-icon">
+                                <p>Create Section</p>
+                            </div>
+                            <div class="qa-btn">
+                                <img src="/img/icon-grade.png" class="colorized-icon">
+                                <p>Schedule</p>
+                            </div>
+                            <div class="qa-btn">
+                                <img src="/img/icon-archive.png" class="colorized-icon">
+                                <p>Assign Professor</p>
+                            </div>
+                        </div>
+                        <div class="calendar">
+                            <div class="month">
+                                <button id="prev" onclick="changeMonth(-1)">&#10094;</button>
+                                <p id="month-year"></p>
+                                <button id="next" onclick="changeMonth(1)">&#10095;</button>
+                            </div>
+                            <br>
+                            <div class="weekdays">
+                                <div>Sun</div>
+                                <div>Mon</div>
+                                <div>Tue</div>
+                                <div>Wed</div>
+                                <div>Thu</div>
+                                <div>Fri</div>
+                                <div>Sat</div>
+                            </div>
+                            <div id="days" class="days"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="/scripts/script.js"></script>
+    <script src="/AdminPanel/script.js"></script>
+</body>
+</html>

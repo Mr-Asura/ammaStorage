@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/cmu-logo-colored-square.png" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/styles/essentials.css">
+    <link rel="stylesheet" href="/styles/font.css">
+    <title>CMU : LMS</title>
+</head>
+<body class="background">
+    <img src="/img/cmu-logo-text-white.png" alt="cmu-logo-text-white" class="cmu-logo-text-white">
+    <main>
+        <div class="login-container">
+            <div class="login-form">
+                <div class="form-items">
+                    <img src="img/cmu-logo-colored.png" alt="cmu-logo" class="cmu-logo-colored">
+                    <h1 class="sign-heading font-poppins-semibold">Sign in to your account</h1>
+                    <p class="font-poppins-light">Welcome back to CMU Portal!</p>
+                    <form action="/dashboard/" method="get">
+                        <div class="field">
+                            <img src="img/icon-envelope.png">
+                            <label id="emailLabel" for="email">Student ID</label>
+                            <input type="text" id="emailField" name="email">
+                        </div>
+                        <div class="field">
+                            <img src="img/icon-password.png">
+                            <label id="passwordLabel" for="password">Password</label>
+                            <input type="password" id="passwordField" name="password">
+                        </div>
+                        <div class="submit-container">
+                            <a href="#" rel="noopener noreferrer">Forgot Password</a>
+                            <input type="submit" value="SIGN IN" class="font-poppins">
+                        </div>
+                        <script>
+                            const emailField = document.getElementById('emailField');
+                            const emailLabel = document.getElementById('emailLabel');
+                            const passwordField = document.getElementById('passwordField');
+                            const passwordLabel = document.getElementById('passwordLabel');
+                            
+                            emailField.addEventListener("input", function() {
+                                if (emailField.value.trim() !== "") {
+                                    emailLabel.style.display = "none";
+                                } else {
+                                    emailLabel.style.display = "block";
+                                }
+                            });
+
+                            passwordField.addEventListener("input", function() {
+                                if (passwordField.value.trim() !== "") {
+                                    passwordLabel.style.display = "none";
+                                } else {
+                                    passwordLabel.style.display = "block";
+                                }
+                            });
+                        </script>
+                    </form>
+                </div>
+            </div>
+            <div class="empty-space"></div>
+        </div>
+    </main>
+</body>
+</html>

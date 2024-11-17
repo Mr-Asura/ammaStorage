@@ -1,0 +1,452 @@
+body {
+    overflow: hidden;
+}
+
+.navbar {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    padding: 0px 30px;
+}
+
+.logo {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    gap: 25px;
+}
+
+.logo img:nth-child(1) {
+    height: 65px;
+}
+
+.logo img:nth-child(2) {
+    height: 40px;
+}
+
+.profile-container {
+    width: auto;
+    min-width: 200px;
+    height: 50px;
+    display: flex;
+    padding: 10px 10px;
+    align-items: center;
+    gap: 11px;
+    border-radius: 15px;
+    background: #E5E7EB;
+    box-shadow: 1px 3px 4px 0px rgba(77, 77, 77, 0.15) inset;
+    cursor: pointer;
+}
+
+.profile-container .user-img {
+    width: 35px;
+    border-radius: 100%;
+}
+
+.profile-container .user-info .display-name {
+    font-weight: bold;
+}
+
+main {
+    width: 100%;
+    height: calc(100% - 120px);
+    display: grid;
+    grid-template-columns: 0.7fr 2.3fr;
+}
+
+.navmenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.navmenu .menuBtn,
+.navmenu .logoutBtn {
+    position: relative;
+    width: max-content;
+    height: auto;
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #333;
+    right: 55px;
+    gap: 10px;
+}
+
+.navmenu .menuBtn {
+    margin-top: 20px;
+}
+
+.navmenu .logoutBtn {
+    margin-bottom: 40px;
+}
+
+.menuBtn .icon-back {
+    width: 25px;
+    height: auto;
+}
+
+.logoutBtn .icon-logout {
+    width: 24px;
+    height: auto;
+}
+
+.navigation {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 13px;
+}
+
+.navigation li {
+    display: inline-block;
+    transition: ease 0.5s;
+}
+
+.navigation li.active {
+    width: auto;
+    height: auto;
+    background-color: #E5E7EB;
+    border-radius: 10px;
+}
+
+.navigation li:hover {
+    /* outline: 1px solid #333; */
+    margin-left: 15px;
+    transition: ease 0.4s;
+}
+
+.navigation li a {
+    width: 210px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    gap: 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.container {
+    position: relative;
+    padding: 0 30px 30px 0;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    border: 1px solid #FFF;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.80);
+    box-shadow: 0px 1px 4px 1px rgba(77, 77, 77, 0.15);
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.content .pinned-courses {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pinned-courses .pc-heading {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pc-heading p {
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.pc-heading a {
+    color: #7E8BB6;
+    margin-right: 10px;
+}
+
+.pinned-courses .pc-container {
+    position: relative;
+    width: 100%;
+    min-height: 100px;
+    /* background-color: #333; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 15px;
+}
+
+.pc-container .course-card {
+    position: relative;
+    width: auto;
+    min-height: 80px;
+    background-color: #adadad;
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    border-radius: 20px;
+    gap: 10px;
+}
+
+.course-card .card-item {
+    height: 100%;
+    margin-top: 5px;
+}
+
+#item-title {
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-wrap: wrap;
+}
+
+#item-count {
+    font-size: 30px;
+}
+
+#item-unit {
+    position: absolute;
+    font-size: 0.7rem;
+    top: 20px;
+    right: 20px;
+}
+
+.quickAction {
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+}
+
+.quickAction .qa-heading {
+    font-size: 15px;
+}
+
+.qa-container {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.qa-container ul {
+    margin-left: 30px;
+}
+
+.qa-btn-holder {
+    position: relative;
+    width: auto;
+    /* height: max-content; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.qa-btn {
+    position: relative;
+    /* background: linear-gradient(-43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%); */
+    border-radius: 10px;
+    padding: 20px;
+    /* height: 100px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    perspective: 1000px;
+    transition: all 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    cursor: pointer;
+}
+
+.qa-btn:hover {
+    transform: rotateY(10deg) rotateX(10deg) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* .qa-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, rgba(255, 255, 255, 0.1));
+    transition: transform 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    z-index: 1;
+}
+
+.qa-btn:hover:before {
+    transform: translateX(-100%);
+}
+  
+.qa-btn:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(transparent, rgba(255, 255, 255, 0.1));
+    transition: transform 0.5s cubic-bezier(0.23, 1, 0.320, 1);
+    z-index: 1;
+}
+  
+.qa-btn:hover:after {
+    transform: translateX(100%);
+} */
+
+.colorized-icon {
+    /* filter: brightness(0) invert(1); */
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.qa-btn p {
+    font-size: large;
+    color: #333;
+}
+
+.qa-btn:nth-child(1) {
+    background: linear-gradient(to bottom right, rgba(95, 127, 231, 0.4), rgba(235, 49, 120, 0.4));
+}
+
+.qa-btn:nth-child(2) {
+    background: linear-gradient(to bottom right, rgba(232, 99, 247, 0.4), rgba(240, 133, 76, 0.4));
+}
+  
+.qa-btn:nth-child(3) {
+    background: linear-gradient(to bottom right, rgba(232, 99, 247, 0.4), rgba(240, 133, 76, 0.4));
+} 
+  
+.qa-btn:nth-child(4) {
+    background: linear-gradient(to bottom right, rgba(247, 163, 73, 0.4), rgba(241, 55, 117, 0.4));
+} 
+  
+
+.calendar {
+    width: 350px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+}
+
+.month {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.month #month-year {
+    font-size: 1.2em;
+    color: #333;
+    font-weight: bold;
+}
+
+.month button {
+    background: none;
+    border: none;
+    font-size: 1.2em;
+    color: #333;
+    cursor: pointer;
+}
+
+.weekdays, .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.weekdays div {
+    font-weight: bold;
+    color: #666;
+}
+
+.days div:not(.current-day) {
+    padding: 10px;
+    color: #333;
+    background-color: #f7f7f7;
+    border-radius: 4px;
+}
+
+.days div:hover {
+    background-color: #eaeaea;
+    cursor: pointer;
+}
+
+.empty {
+    visibility: hidden;
+}
+
+.current-day {
+    padding: 10px;
+    background: #406eda; /* Highlight color */
+    color: #fff;
+    font-weight: bold;
+    border-radius: 50%; /* Makes it look circular */
+}
+
+
+/* Responsive mobile view */
+
+@media (max-width: 500px) {
+    .navbar {
+        height: auto;
+        padding: 20px;
+        justify-content: center;
+    }
+
+    .logo {
+        flex-direction: column;
+        margin-left: 0;
+        gap: 5px;
+    }
+
+    .logo img:nth-child(1) {
+        height: 55px;
+    }
+    
+    .logo img:nth-child(2) {
+        height: 30px;
+    }
+
+    .profile-container {
+        display: none;
+    }
+
+    .navmenu {
+        display: none;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        padding: 20px;
+    }
+
+    .content {
+        height: 100%;
+    }
+}

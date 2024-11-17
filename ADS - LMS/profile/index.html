@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/cmu-logo-colored-square.png" type="image/x-icon">
+    <link rel="stylesheet" href="/profile/style.css">
+    <link rel="stylesheet" href="/styles/essentials.css">
+    <link rel="stylesheet" href="/styles/font.css">
+    <title>Profile</title>
+</head>
+<body class="background">
+    <nav class="navbar">
+        <div class="logo">
+            <img src="/img/cmu-logo-colored.png" alt="logo">
+            <img src="/img/cmu-logo-text-colored.png" alt="logo-text">
+        </div>
+        <!-- <div class="profile-container" title="Profile" onclick="redirect('../profile')">
+            <img src="/img/profile-amma.jpg" alt="pf" class="user-img">
+            <div class="user-info">
+                <p class="display-name">Ammaron Oliveros</p>
+                <p class="student-id">202201251</p>
+            </div>
+        </div> -->
+    </nav>
+    <main>
+        <nav class="navmenu">
+            <button class="menuBtn font-poppins">
+                <img src="/img/icon-back.png" class="icon-back">
+                <p>Collapse Menu</p>
+            </button>
+            <ul type="none" class="navigation">
+                <li id="announcement"><a href="/announcement/"><img src="/img/icon-bell.png" width="20px">Announcement</a></li>
+                <li id="dashboard"><a href="/dashboard/"><img src="/img/icon-dash.png" width="20px">Dashboard</a></li>
+                <li id="courses"><a href="/courses/"><img src="/img/icon-archive.png" width="20px">Courses</a></li>
+                <li id="schedule"><a href="/schedule/"><img src="/img/icon-calendar.png" width="20px">Schedule</a></li>
+                <li id="grades"><a href="/grade/"><img src="/img/icon-grade.png" width="20px">Grades</a></li>
+            </ul>
+            <button class="logoutBtn font-poppins" onclick="redirect('../')">
+                <img src="/img/icon-logout.png" class="icon-logout">
+                <p">Logout Account</p>
+            </button>
+        </nav>
+        <div class="container">
+            <div class="content">
+                <p class="heading">Profile</p>
+                <div class="pf-container">
+                    <div id="pf-img-holder">
+                        <img src="/img/profile-amma.jpg" alt="">
+                    </div>
+                    <div style="display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                        <h2 class="font-poppins-semibold" id="pf-name">Oliveros, Ammaron C.</h2>
+                        <div class="pf-id-container">
+                            <img src="/img/icon-id.png" height="90%">
+                            <p>ID: <span id="pf-id">202201251</span></p>
+                        </div>
+                    </div>
+                    <div class="pf-info-container">
+                        <div class="pf-info-label">
+                            <p>Gender:</p>
+                            <p>Year & Section:</p>
+                            <p>Course:</p>
+                            <p>Email Address:</p>
+                        </div>
+                        <div class="pf-info-output">
+                            <p #pf-gender>Male</p>
+                            <p #pf-ys>BSIT-3B</p>
+                            <p #pf-course>Bachelor of Science in Information Technology</p>
+                            <p #pf-email>202201251@cityofmalabonuniverisity.edu.ph</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="/scripts/script.js"></script>
+</body>
+</html>

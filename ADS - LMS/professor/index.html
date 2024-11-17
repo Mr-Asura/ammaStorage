@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/img/cmu-logo-colored-square.png" type="image/x-icon">
+    <link rel="stylesheet" href="/professor/style.css">
+    <link rel="stylesheet" href="/styles/essentials.css">
+    <link rel="stylesheet" href="/styles/font.css">
+    <title>Dashboard</title>
+</head>
+
+<body class="background">
+    <nav class="navbar">
+        <div class="logo">
+            <img src="/img/cmu-logo-colored.png" alt="logo">
+            <img src="/img/cmu-logo-text-colored.png" alt="logo-text">
+        </div>
+        <div class="profile-container" title="Profile" onclick="redirect('../profile')">
+            <img src="/img/profile-amma.jpg" alt="pf" class="user-img">
+            <div class="user-info">
+                <p class="display-name">Ammaron Oliveros</p>
+                <p class="student-id">202201251</p>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <nav class="navmenu">
+            <button class="menuBtn font-poppins">
+                <img src="/img/icon-back.png" class="icon-back">
+                <p>Collapse Menu</p>
+            </button>
+            <ul type="none" class="navigation">
+                <li id="announcement"><a href="/professor/announcement/" class="navLink"><img src="/img/icon-bell.png"
+                            width="20px">
+                        <p class="navLabel">Announcement</p>
+                    </a></li>
+                <!-- <li id="dashboard" class="active"><a href="/dashboard/" class="navLink"><img src="/img/icon-dash.png"
+                            width="20px">
+                        <p class="navLabel">Dashboard</p>
+                    </a></li> -->
+                <li id="courses" class="active"><a href="/professor/" class="navLink"><img src="/img/icon-archive.png" width="20px">
+                        <p class="navLabel">My Courses</p>
+                    </a></li>
+                <li id="schedule"><a href="/professor/schedule/" class="navLink"><img src="/img/icon-calendar.png" width="20px">
+                        <p class="navLabel">Schedule</p>
+                    </a></li>
+                <li id="grades"><a href="/professor/grade/" class="navLink"><img src="/img/icon-grade.png" width="20px">
+                        <p class="navLabel">Grades</p>
+                    </a></li>
+                <!-- <li id="logout"><a href="/"><img src="/img/icon-logout.png" width="20px">Logout Account</a></li> -->
+            </ul>
+            <button class="logoutBtn font-poppins">
+                <img src="/img/icon-logout.png" class="icon-logout">
+                <p>Logout Account</p>
+            </button>
+        </nav>
+        <div class="container">
+            <div class="content">
+                <div class="pinned-courses">
+                    <div class="pc-heading">
+                        <p>My Courses</p>
+                        <a href="/proctor/courses/">View All</a>
+                    </div>
+                    <div class="pc-container">
+                        <div class="course-card" id="c1">
+                            <img src="/img/img-1.png" alt="">
+                            <div class="card-item">
+                                <p id="item-title">Event Driven Programming</p>
+                                <p id="item-section">BSIT-3B</p>
+                            </div>
+                            <p id="item-unit">3 units</p>
+                        </div>
+                        <div class="course-card" id="c2">
+                            <img src="/img/img-2.png" alt="">
+                            <div class="card-item">
+                                <p id="item-title">Human Computer Interaction</p>
+                                <p id="item-section">BSIT-3B</p>
+                            </div>
+                            <p id="item-unit">3 units</p>
+                        </div>
+                        <div class="course-card" id="c3">
+                            <img src="/img/img-3.png" alt="">
+                            <div class="card-item">
+                                <p id="item-title">Advance Database System</p>
+                                <p id="item-section">BSIT-3B</p>
+                            </div>
+                            <p id="item-unit">3 units</p>
+                        </div>
+                        <div class="course-card" id="c3">
+                            <img src="/img/img-3.png" alt="">
+                            <div class="card-item">
+                                <p id="item-title">Event Driven Programming</p>
+                                <p id="item-section">BSIT-3A</p>
+                            </div>
+                            <p id="item-unit">3 units</p>
+                        </div>
+                        <div class="course-card" id="c4">
+                            <img src="/img/img-4.png" alt="">
+                            <div class="card-item">
+                                <p id="item-title">Event Driven Programming</p>
+                                <p id="item-section">BSIT-3C</p>
+                            </div>
+                            <p id="item-unit">3 units</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="to-do">
+                    <p class="td-heading">Action</p>
+                    <div class="td-container">
+                        
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </main>
+    <script src="/scripts/script.js"></script>
+</body>
+
+</html>

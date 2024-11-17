@@ -1,0 +1,118 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100dvh;
+    background-color: #F3F4F6;
+    font-family: poppins;
+    font-size: 0.85rem;
+    color: #333;
+}
+
+.background {
+    background: url(/img/main-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+@media (max-width: 500px) {
+    .background {
+        background-position: 58% center;
+        backdrop-filter: blur(4px);
+        transition: ease 0.3s;
+    }
+}
+
+:root {
+    --c1: linear-gradient(to bottom right, rgba(182, 199, 255, 0.4), rgba(162, 100, 220, 0.4));
+    --c2: linear-gradient(to bottom right, rgba(232, 99, 247, 0.4), rgba(240, 133, 76, 0.4));
+    --c3: linear-gradient(to bottom right, rgba(247, 163, 73, 0.4), rgba(241, 55, 117, 0.4));
+    --c4: linear-gradient(to bottom right, rgba(95, 127, 231, 0.4), rgba(235, 49, 120, 0.4));
+}
+
+#c1 {
+    background: var(--c1);
+    box-shadow: 0 4px 10px rgba(182, 199, 255, 0.4), 0 4px 20px rgba(162, 100, 220, 0.4);
+    transition: 0.5s;
+}
+
+#c2 {
+    background: var(--c2);
+    box-shadow: 0 4px 10px rgba(231, 133, 242, 0.4), 0 4px 20px rgba(242, 163, 120, 0.4);
+    transition: 0.5s;
+}
+
+#c3 {
+    background: var(--c3);
+    box-shadow: 0 4px 10px rgba(253, 194, 130, 0.4), 0 4px 20px rgba(241, 55, 117, 0.4);
+    transition: 0.5s;
+}
+
+#c4 {
+    background: var(--c4);
+    box-shadow: 0 4px 10px rgba(106, 137, 240, 0.4), 0 4px 20px rgba(236, 65, 130, 0.4);
+    transition: 0.5s;
+}
+
+#c1:hover,
+#c2:hover,
+#c3:hover,
+#c4:hover {
+    box-shadow: none;
+    scale: 1.04;
+    transition: 0.5s;
+}
+
+/* .course-card,
+.td-item {
+    cursor: pointer;
+} */
+
+main.close {
+    grid-template-columns: 0 1fr;
+    padding-left: 30px;
+    transition: 3s;
+}
+
+.navmenu.close {
+    width: 10vw;
+    /* overflow: hidden; */
+    transition: 2s;
+}
+
+.navLabel.pre-close {
+    transition: 1s;
+    opacity: 0;
+}
+
+.navLabel.pre-close.close {
+    display: none;
+}
+
+.navLink.close {
+    width: 50px;
+    transition: 1.5s;
+}
+
+.container {
+    overflow-y: scroll;
+}
+
+.container.full {
+    width: 90vw;
+    transition: 1.5s;
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+}
+
+.content::-webkit-scrollbar {
+    display: none;
+}

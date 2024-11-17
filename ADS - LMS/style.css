@@ -1,0 +1,179 @@
+.cmu-logo-text-white {
+    position: absolute;
+    width: 170px;
+    height: auto;
+    right: 40px;
+    bottom: 20px;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.login-form {
+    width: auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-items {
+    width: 350px;
+    height: auto;
+    transform: translateX(40px);
+}
+
+.form-items form label {
+    color: #4D4D4D;
+}
+
+.cmu-logo-colored {
+    width: 53px;
+    height: auto;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.sign-heading {
+    color: #555;
+    font-size: 25px;
+}
+
+.form-items p {
+    color: #555;
+    margin-bottom: 25px;
+}
+
+.field {
+    position: relative;
+    width: 100%;
+    height: 35px;
+    background-color: #555;
+    background: #E5E7EB;
+    display: flex;
+    align-items: center;
+    gap: 11.93px;    
+    border-radius: 100px;
+    padding: 0 20px;
+    font-size: 12px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    box-shadow: 1px 3px 4px 0px rgba(77, 77, 77, 0.15) inset;
+}
+
+.field:nth-child(2) {
+    padding: 0 25px;
+    gap: 14px;
+}
+
+.field img {
+    height: 14px;
+    width: auto;
+}
+
+.field label {
+    transform: translateY(1px);
+}
+
+.field input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    right: 0;
+    padding-left: 49px;
+}
+
+.submit-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    padding-left: 25px;
+}
+
+.submit-container a {
+    width: auto;
+    height: auto;
+    color: #012363;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.submit-container input[type=submit] {
+    width: 120px;
+    height: 35px;
+    color: #F3F4F6;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 100px;
+    border: transparent;
+    background: linear-gradient(98deg, #0536A1 0%, #0050FF 97.12%);
+    cursor: pointer;
+    transition: ease 0.5s;
+}
+
+.submit-container input[type=submit]:hover {
+    background: linear-gradient(188deg, #0536A1 0%, #0050FF 97.12%);
+    transition: ease 0.5s;
+    scale: 1.1;
+}
+
+input:focus {
+    outline: none;
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 500px) {
+    .login-form {
+        justify-content: flex-end;
+        padding-bottom: 50px;
+    }
+
+    .cmu-logo-text-white {
+        display: none;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-items {
+        transform: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cmu-logo-colored {
+        width: 80px;
+        transform: translateY(-120px);
+    }
+
+    .sign-heading {
+        font-size: 20px;
+        /* color: #f0f0f0; */
+        color: #333;
+    }
+
+    .form-items p.font-poppins-light {
+        /* color: #e4e4e4; */
+        color: #444;
+    }
+
+    .submit-container {
+        width: 280px;
+    }
+
+    .submit-container input[type=submit] {
+        width: 100px;
+        height: 30px;
+    }
+}
